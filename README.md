@@ -8,12 +8,9 @@ Browsers doesn't read Sass directly, it has to be compiled down to regular css, 
 ### Watching Sass in the workspace
     sass --watch scss/style.scss  css/style.css
 ###
-<div class="display">
-    where, <br>
-    scss/style.scss ⇋ is the location of the sass file to be compiled
-    <br>
-    css/style.css ⇋ is the location of the css file where the sass file while be compiled into
-</div>
+    where,
+    scss/style.scss ⇋ is the location of the sass file to be compiled.
+    css/style.css ⇋ is the location of the css file where the sass file while be compiled into.
 
 ### Extensions
 sass has 2 file extensions that can be used based on preference.
@@ -131,21 +128,5 @@ here is a snippet
             font-size: #{$space * 8}px;
         }
     }
- 
- this is usually ideal for large projects, as the classes can be used throughout the code.
-
-
-
-<!-- Styling for the div -->
-<style>
-    .display {
-        background-color: #0e6cff;
-        padding: 10px; 
-        border-radius: 5px;
-        transition: 1s ease-in-out;
-    }
-    .display:hover {
-        transform: scale(1.05);
-        margin: 20px 0;
-    }
-</style>
+###
+    loops are ideal for large projects, as the classes can be used throughout the code.
