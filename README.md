@@ -7,6 +7,11 @@ Browsers doesn't read Sass directly, it has to be compiled down to regular css, 
 
 ### Watching Sass in the workspace
     sass --watch scss/style.scss  css/style.css
+
+    or 
+
+    sass --watch scss/style.css css/style.css --style compressed
+    (if you want the css file to be compressed)
 ###
     where,
     scss/style.scss ⇋ is the location of the sass file to be compiled.
