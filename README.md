@@ -73,7 +73,7 @@ to add the created shared style in the a selector, use;
 <b>@extend %btn;</b>
 i.e if shared style is %btn
 
-## preventing processed sass files from generating source map files
+### preventing processed sass files from generating source map files
     sass --watch --no-source-map input.scss output.css
 
 ### functions;
