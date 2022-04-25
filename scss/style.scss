@@ -1,6 +1,11 @@
-@import 'config';
-@import 'utilities';
-@import 'buttons';
+@forward 'mobile';
+
+// @import 'config';
+@use 'config' as *;
+// @import 'utilities';
+@use 'utilities' as *;
+// @import 'buttons';
+@use 'buttons' as *;
 
 * {
     box-sizing: border-box;
@@ -63,6 +68,3 @@ a {
         }
     }
 }
-
-
-@import 'mobile';

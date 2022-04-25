@@ -53,18 +53,39 @@ e.g.
     }
 
 
+### adding a partial file or another sass file into another sass file;
+<b>@forward</b> and <b>@use</b> would be replacing <b>@import</b> in sass. They both perform similarly to @import, but have different uses.
 
-### adding a partial file to the main sass file;
-<b>@import 'config';</b>
-i.e if partial file is _config.scss
-<br>
-or
-<br>
-<b>@import 'utilities';</b>
-i.e if partial file is _utilities.scss
+<b>@forward</b> would specifically be used to import partials or another sass file into a sass file
+
+while, <b>@use</b> would be used to import sass files that has variables, functions, mixins etc. or other methods that would be called in the current sass file being imported into.
+
+(e.g the [buttons.scss file](scss/_buttons.scss) makes use of <b>@use</b> when importing the config file since it makes use of a mixin from the [config file](scss/_config.scss))
+
+<b>@use</b> takes in a <b>as</b> keyword
+<code>    
+    @use 'config' as config; <br>
+    @use 'config' as *
+</code>
+            
+    read the sass documentation for a detailed breakdown of this.
+
+
+
+<div style="color:red; font-size: 1.5rem">
+    @import is deprecated (and won't be supported in coming years)
+</div>
+<div style="text-decoration: line-through">
+    <b>@import 'config';</b>
+    i.e if partial file is _config.scss
+    <br>
+    or
+    <br>
+    <b>@import 'utilities';</b>
+    i.e if partial file is _utilities.scss
+</div>
 
 <b>p.s.</b> partial files always start with the symbol "_" but when it is imported, the symbol and file extension is omitted.
-
 
 ### creating shared styles;
     shared styles are created using the "%" symbol as the pre-fix.
