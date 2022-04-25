@@ -1,4 +1,4 @@
-### <b>SASS - Syntatically Awesome Stylesheet</b>
+## SASS - Syntatically Awesome Stylesheet
 Sass is a CSS pre-processor. It allows css to act more like an actual programming language, and it's more efficient.
 Browsers doesn't read Sass directly, it has to be compiled down to regular css, using a Sass compiler.
 
