@@ -7,11 +7,16 @@ Browsers doesn't read Sass directly, it has to be compiled down to regular css, 
 
 ### Watching Sass in the workspace
     sass --watch scss/style.scss  css/style.css
-
-    or 
-
+    
+#### if you want the css file to be compressed
     sass --watch scss/style.css css/style.css --style compressed
-    (if you want the css file to be compressed)
+    
+#### if you want to disable source map file
+    sass --watch sass/style.scss css/style.css --no-source-map
+    
+#### you can compress css and also disable the source map file;
+    sass --watch sass/style.scss css/style.css --style compressed --no-source-map
+    
 ###
     where,
     scss/style.scss ⇋ is the location of the sass file to be compiled.
